@@ -70,3 +70,7 @@ vim.keymap.set(
   "<cmd>lua require('core.plugins.lsp.utils').set_ltex_lang(vim.g.config.plugins.ltex.additional_lang)<cr>",
   { desc = "Set ltex-ls language" }
 )
+
+vim.api.nvim_set_hl(0, 'LspReferenceText', { bg = '#39fafa', fg = '#000000', bold = true })
+vim.api.nvim_set_hl(0, 'LspReferenceRead', { bg = '#39fafa', fg = '#000000', bold = true })
+vim.api.nvim_set_hl(0, 'LspReferenceWrite', { bg = '#39fafa', fg = '#000000', bold = true })

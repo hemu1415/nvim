@@ -37,7 +37,7 @@ return {
     pumblend = 10, -- Popup blend
     pumheight = 10, -- Maximum number of entries in a popup
     relativenumber = true, -- set relative numbered lines
-    scrolloff = 5, -- Minimal number of screen lines to keep above and below the cursor
+    scrolloff = 0, -- Minimal number of screen lines to keep above and below the cursor
     sessionoptions = { "buffers", "curdir", "tabpages", "winsize" },
     shiftround = true, -- Round indent
     shiftwidth = 2, -- the number of spaces inserted for each indentation
@@ -53,7 +53,7 @@ return {
     swapfile = true, -- enable/disable swap file creation
     tabstop = 2, -- how many columns a tab counts for
     timeoutlen = 400, -- time to wait for a mapped sequence to complete (in milliseconds)
-    ttimeoutlen = 0, -- Time in milliseconds to wait for a key code sequence to complete
+ -- ttimeoutlen = 0, -- Time in milliseconds to wait for a key code sequence to complete
     undodir = fn.stdpath("data") .. "/undodir", -- set undo directory
     undofile = true, -- enable/disable undo file creation
     undolevels = 1000,

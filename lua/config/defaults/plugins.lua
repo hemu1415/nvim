@@ -28,6 +28,7 @@ return {
     },
     -- https://github.com/Allaman/kustomize.nvim
     kustomize = {
+      enabled = false,
       dev = false,
       opts = {
         kinds = {
