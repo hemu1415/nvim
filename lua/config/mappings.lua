@@ -1,6 +1,9 @@
 local utils = require("utils.functions")
 local map = vim.keymap.set
 
+-- set Ctrl-c as copy shortcut
+map("v", "<C-c>", '"+y')
+
 -- Remap for dealing with visual line wraps
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
