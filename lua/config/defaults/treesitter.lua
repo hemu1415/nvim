@@ -20,5 +20,7 @@ return {
     "vim",
     "yaml",
     "helm",
+    "cpp",
+    "make",
   },
 }

@@ -10,6 +10,7 @@ return {
     "marksman",
     "lua_ls",
     "yamlls",
+    "clangd",
   },
 
   tools = {
@@ -18,11 +19,13 @@ return {
     "stylua",
     "shfmt",
     "yamlfmt",
+    "clang-format",
     -- Linter
     "hadolint",
     "shellcheck",
     "selene",
     "yamllint",
+    "cpplint",
     -- DAP
     "delve",
     -- Go
