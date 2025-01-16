@@ -45,7 +45,9 @@ local default_config = {
           min_keyword_length = 0,
         },
         luasnip = {
+          name = "luasnip",
           min_keyword_length = 2,
+          module = "blink.cmp.sources.luasnip",
         },
         buffer = {
           min_keyword_length = 5,
@@ -61,7 +63,7 @@ local default_config = {
         window = { border = "rounded" },
       },
       list = {
-        selection = "auto_insert",
+        selection = { auto_insert = true },
       },
       trigger = {
         show_on_insert_on_trigger_character = false,
