@@ -15,6 +15,7 @@ return {
     "marksman",
     "lua_ls",
     "yamlls",
+    "pylsp",
   },
   plugins = {
     blink = {

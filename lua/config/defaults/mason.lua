@@ -11,6 +11,7 @@ return {
     "lua_ls",
     "yamlls",
     "clangd",
+    "pylsp",
   },
 
   tools = {
