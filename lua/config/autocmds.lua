@@ -11,3 +11,10 @@
 vim.api.nvim_set_hl(0, "LspReferenceText", { bg = "#39fafa", fg = "#000000", bold = true })
 vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = "#39fafa", fg = "#000000", bold = true })
 vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = "#39fafa", fg = "#000000", bold = true })
+
+-- Make Ctrl-L work in terminal mode
+vim.api.nvim_create_autocmd("TermEnter", {
+  callback = function(ev)
+    vim.keymap.set("t", "<c-l>", "<c-l>", { buffer = ev.buf, nowait = true })
+  end,
+})
